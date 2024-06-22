@@ -1,7 +1,7 @@
 # CASCADE - Your GenAI-driven Study Companion
 
 
-![ezgif-5-33a95c740e](https://i.ibb.co/N7GpqBR/ezgif-5-33a95c740e.gif)
+![https://i.ibb.co/N7GpqBR/ezgif-5-33a95c740e.gif](https://i.ibb.co/N7GpqBR/ezgif-5-33a95c740e.gif)
 
 
 ## Introduction
