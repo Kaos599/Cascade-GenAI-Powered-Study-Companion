@@ -5,7 +5,7 @@
 
 
 ## Introduction
-Welcome to CASCADE, a GenAI-driven study companion designed to revolutionize personalized learning. Created for Hack2Skill's HumanAIze Hackathon, CASCADE is here to enhance your academic journey by addressing diverse learning styles with a suite of AI tools.
+Welcome to CASCADE, a GenAI-driven study companion designed to revolutionize personalized learning. Created for Passionate learners looking to maximize their studying habits, CASCADE is here to enhance your academic journey by addressing diverse learning styles with a suite of AI tools.
 
 ## Gen-AI Powered Features
 - **Adaptive Study Plans** works adjusting to your study schedules, preferences and progress ensuring that every session is optimized for your learning style.
