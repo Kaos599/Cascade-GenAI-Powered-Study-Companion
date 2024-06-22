@@ -45,7 +45,7 @@ Run the setup file to install CASCADE on your computer.
 
 
 ## License
-This project is licensed under a custom license - see the LICENSE file for details.
+This project is licensed under a custom license - see the [LICENSE](https://github.com/Kaos599/Cascade-GenAI-Powered-Study-Companion/blob/main/LICENSE.md) file for details.
 
 
 ## Contact
