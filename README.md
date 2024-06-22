@@ -1,7 +1,7 @@
 # CASCADE - Your GenAI-driven Study Companion
 
 
-![](https://i.ibb.co/N7GpqBR/ezgif-5-33a95c740e.gif)
+![](https://github.com/Kaos599/Cascade-GenAI-Powered-Study-Companion/blob/main/assets/Intro.mp4)
 
 
 ## Introduction
