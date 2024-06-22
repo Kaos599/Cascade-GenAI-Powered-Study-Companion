@@ -1,7 +1,7 @@
 # CASCADE - Your GenAI-driven Study Companion
 
 
-![ezgif-5-33a95c740e](https://github.com/Kaosv2/CascadeV3/assets/171690107/1152407d-d082-431c-901e-76f815f5d8d4)
+![ezgif-5-33a95c740e](https://i.ibb.co/N7GpqBR/ezgif-5-33a95c740e.gif)
 
 
 ## Introduction
