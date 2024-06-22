@@ -49,7 +49,7 @@ This project is licensed under a custom license - see the LICENSE file for detai
 
 
 ## Contact
-Made with Love By Harsh Dayal [Github](https://github.com/Kaos599)[Linkedin](https://www.linkedin.com/in/harshdayal/) and Saanvi Sharma [Github](https://github.com/confusedjpeg)[Linkedin](https://www.linkedin.com/in/saanvi-sharma-b12a27251/)!
+Made with Love By Harsh Dayal [Github](https://github.com/Kaos599) | [Linkedin](https://www.linkedin.com/in/harshdayal/) and Saanvi Sharma [Github](https://github.com/confusedjpeg) | [Linkedin](https://www.linkedin.com/in/saanvi-sharma-b12a27251/)!
 
 For any queries or support, please open an issue on this repository or contact us at dayal700007@gmail.com or saanvisharma004@gmail.com.
 
