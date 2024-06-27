@@ -27,7 +27,7 @@ Welcome to CASCADE, a GenAI-driven study companion designed to revolutionize per
 ## Installation
 
 ### Step 1: Download the Setup
-Download the setup file by clicking [here](https://github.com/Kaos599/Cascade-GenAI-Powered-Study-Companion/releases/download/V3.5/Cascade.Setup.exe).
+Download the latest setup file by clicking [here](https://github.com/Kaos599/Cascade-GenAI-Powered-Study-Companion/releases/download/V3.5/Cascade.Setup.exe).
 
 ### Step 2: Install Dependencies
 The installer will automatically ask you if you want to download and install dependencies, Click yes and let the installer do its magic.
