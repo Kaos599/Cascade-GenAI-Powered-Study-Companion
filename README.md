@@ -27,17 +27,22 @@ Welcome to CASCADE, a GenAI-driven study companion designed to revolutionize per
 ## Installation
 
 ### Step 1: Download the Setup
-Download the setup file by clicking [here](NULL).
+Download the setup file by clicking [here](https://github.com/Kaos599/Cascade-GenAI-Powered-Study-Companion/releases/download/V3.5/Cascade.Setup.exe).
 
-### Step 2: Run the Batch File
+### Step 2: Install Dependencies
+The installer will automatically ask you if you want to download and install dependencies, Click yes and let the installer do its magic.
+
+### IF IN CASE YOU CANCELLED THE INSTALL DEPENDENCIES OPTION OR IF YOU WANT TO MANUALLY INSTALL DEPENDENCIES THEN EITHER RERUN THE SETUP OR FOLLOW THESE STEPS:-
+
+#### Step 2a: Run the Batch File
 Run the `install_dependencies.bat` file to install the necessary dependencies. This will also install the Google Cloud SDK CLI for you.
 
-### Step 3: Install Google Cloud SDK (if not installed)
+#### Step 2b: Install Google Cloud SDK (if not installed)
 If the batch file does not install the Google Cloud SDK, download and install it manually from [this link](https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe). After installation, log in using:
 ```sh
 gcloud auth login
 ```
-### Step 4: Install CASCADE
+#### Step 2c: Install CASCADE
 Run the setup file to install CASCADE on your computer.
 
 ## Make sure to run Cascade as admin.
