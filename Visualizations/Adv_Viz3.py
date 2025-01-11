@@ -42,30 +42,42 @@ plt.tight_layout()
 plt.show()
 
 # --- Visualization 2: Category Market Size (2016) and CAGR ---
-plt.figure(figsize=(10, 6))
-ax = plt.gca()
+
+
+# Data for market size and CAGR
+categories = ['Reskilling & Online Certifications', 'Primary & Secondary Supplemental Ed', 'Test Preparation']
+market_size_2016 = [93, 73, 43]  # USD Millions
+cagr = [38, 60, 64]  # Compound Annual Growth Rate (%)
+
+# Create the figure and axis
+fig = plt.figure(figsize=(10, 6))
+ax = fig.add_subplot(111)
 fig.patch.set_facecolor('black')  # Figure background color to black
 ax.set_facecolor('black')
 
+# Bar width and positions
 bar_width = 0.35
 x_pos = np.arange(len(categories))
 
-bars1 = ax.bar(x_pos, market_size_2016, bar_width, label='Market Size (2016, USD Millions)', color='white')
-bars2 = ax.bar(x_pos + bar_width, cagr, bar_width, label='CAGR (%)', color='#17A2B8')
+# Plot bars
+bars1 = ax.bar(x_pos, market_size_2016, bar_width, label='Market Size (2016, USD Millions)', color='#1ABC9C')
+bars2 = ax.bar(x_pos + bar_width, cagr, bar_width, label='CAGR (%)', color='#FA8072')
 
+# Chart customization
 ax.set_ylabel('USD Millions / Percentage', color='white')
 ax.set_title('Category Breakdown (2016) and Projected Growth', color='white', fontweight='bold', fontsize=14)
 ax.set_xticks(x_pos + bar_width / 2)
 ax.set_xticklabels(categories, rotation=45, ha='right', color='white')
 ax.tick_params(axis='y', labelcolor='white')
-ax.legend(facecolor='black', labelcolor='white')
+ax.legend(facecolor='black', edgecolor='white', labelcolor='white')
 
 # Annotations (Data values on bars)
 for bar, value in zip(bars1, market_size_2016):
-    plt.text(bar.get_x() + bar.get_width() / 2, bar.get_height(), str(value), ha='center', va='bottom', color='black')
+    plt.text(bar.get_x() + bar.get_width() / 2, bar.get_height(), str(value), ha='center', va='bottom', color='white', fontsize=10)
 for bar, value in zip(bars2, cagr):
-    plt.text(bar.get_x() + bar.get_width() / 2, bar.get_height(), str(value), ha='center', va='bottom', color='black')
+    plt.text(bar.get_x() + bar.get_width() / 2, bar.get_height(), str(value), ha='center', va='bottom', color='white', fontsize=10)
 
+# Source text
 plt.figtext(0.95, 0.02, "Source: KPMG and Google", ha='right', color='white')
 plt.tight_layout()
 plt.show()
