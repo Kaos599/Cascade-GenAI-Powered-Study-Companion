@@ -1,0 +1,13 @@
+{
+  "name": "cascade-genai-powered-study-companion",
+  "version": "1.0.0",
+  "description": "![](https://github.com/Kaos599/Cascade-GenAI-Powered-Study-Companion/blob/main/assets/Frame-43(2).gif)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "autopush": "git add . && git commit -m \"Auto-commit: Changes saved on $(date)\" && git push origin main"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
