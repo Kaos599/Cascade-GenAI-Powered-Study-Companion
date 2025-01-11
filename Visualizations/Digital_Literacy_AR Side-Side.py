@@ -1,53 +1,63 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Data for state-wise digital divide in internet skills
-states = ["Goa", "Kerala", "Tamil Nadu", "Telangana", 
-          "Uttar Pradesh", "Chhattisgarh", "Tripura", "Meghalaya"]
-percentages = [65.7, 53.4, 48.0, 47.2, 16.0, 11.9, 8.2, 7.5]
-national_average = 28.5
+# Data for digital literacy by age group and region
+age_groups = ["15-24 Years", "15-29 Years", "15+ Years"]
+categories = ["Urban", "Rural", "All"]
+male = {
+    "15-24 Years": [44.2, 26.4, 31.8],
+    "15-29 Years": [47.7, 28.1, 34.2],
+    "15+ Years": [41.8, 23.4, 30.1],
+}
+female = {
+    "15-24 Years": [35.3, 14.3, 20.7],
+    "15-29 Years": [36.5, 14.5, 21.6],
+    "15+ Years": [28.0, 11.7, 18.0],
+}
+person = {
+    "15-24 Years": [40.2, 21.0, 26.8],
+    "15-29 Years": [42.6, 22.0, 28.5],
+    "15+ Years": [35.7, 18.5, 25.0],
+}
 
-# Colors for bars based on whether they are above or below the national average
-colors = ["#1ABC9C" if val >= national_average else "#FA8072" for val in percentages]
+# Bar width and positions
+x = np.arange(len(categories))
+width = 0.25
 
-# Create the bar chart
-fig = plt.figure(figsize=(10, 6))
-ax = fig.add_subplot(111)
-
-# Set the background color for the figure and axis
+# Plot the grouped bar chart for each age group
+fig, axes = plt.subplots(1, 3, figsize=(18, 6), sharey=True)
 fig.patch.set_facecolor('black')
-ax.set_facecolor('black')
 
-# Create the bar chart
-bars = ax.bar(states, percentages, color=colors, edgecolor="black")
+for i, age_group in enumerate(age_groups):
+    ax = axes[i]
+    ax.set_facecolor('black')
+    
+    ax.bar(x - width, male[age_group], width, label="Male", color="#1ABC9C")
+    ax.bar(x, female[age_group], width, label="Female", color="#FA8072")
+    ax.bar(x + width, person[age_group], width, label="Person", color="#17A2B8")
+    
+    # Chart customization
+    ax.set_title(f"Digital Literacy ({age_group})", fontsize=14, fontweight="bold", color="white")
+    ax.set_xticks(x)
+    ax.set_xticklabels(categories, color="white")
+    ax.set_xlabel("Region", fontsize=12, color="white")
+    if i == 0:
+        ax.set_ylabel("Percentage (%)", fontsize=12, color="white")
+    ax.grid(axis="y", linestyle="--", alpha=0.6, color="#495057")
+    ax.legend(facecolor='black', edgecolor='white', labelcolor='white')
+    
+    # Set tick parameters for both axes
+    ax.tick_params(axis='x', colors='white')
+    ax.tick_params(axis='y', colors='white')
+    
+    # Set the axis lines to white
+    ax.spines['bottom'].set_color('white')
+    ax.spines['left'].set_color('white')
+    
+    # Remove the top and right spines
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
 
-# Add a horizontal line for the national average
-ax.axhline(y=national_average, color="#495057", linestyle="--", linewidth=1.5, label="National Average")
-
-# Annotate bars with percentages
-for bar, value in zip(bars, percentages):
-    ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 1, f"{value:.1f}%", 
-             ha="center", va="bottom", fontsize=10, color="white")
-
-# Chart title and labels
-ax.set_title("State-wise Digital Divide in Internet Skills (Ages 15-29)", fontsize=14, fontweight="bold", color="white")
-ax.set_ylabel("Percentage (%)", fontsize=12, color="white")
-ax.set_xlabel("States", fontsize=12, color="white")
-ax.legend(facecolor='black', edgecolor='white', labelcolor='white')
-ax.grid(axis="y", linestyle="--", alpha=0.6, color='#495057')
-
-# Set tick parameters for both axes
-ax.tick_params(axis='x', colors='white')
-ax.tick_params(axis='y', colors='white')
-
-# Set the axis lines to white
-ax.spines['bottom'].set_color('white')
-ax.spines['left'].set_color('white')
-
-# Remove the top and right spines
-ax.spines['top'].set_visible(False)
-ax.spines['right'].set_visible(False)
-
-# Show the chart
+# Adjust layout and display
 plt.tight_layout()
 plt.show()
