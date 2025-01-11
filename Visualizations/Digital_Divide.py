@@ -42,8 +42,10 @@ ax.tick_params(axis='y', colors='white')
 # Set the axis lines to white
 ax.spines['bottom'].set_color('white')
 ax.spines['left'].set_color('white')
-ax.spines['top'].set_color('white')
-ax.spines['right'].set_color('white')
+
+# Remove the top and right spines
+ax.spines['top'].set_visible(False)
+ax.spines['right'].set_visible(False)
 
 # Show the chart
 plt.tight_layout()
