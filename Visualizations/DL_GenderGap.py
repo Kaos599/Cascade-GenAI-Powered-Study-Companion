@@ -1,3 +1,7 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+
 # Data for gender and regional gap in digital literacy
 regions = ["Urban", "Rural", "All"]
 male_literacy = [47.7, 28.1, 34.2]  # 15-29 Years (Male)
