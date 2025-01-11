@@ -39,6 +39,12 @@ ax.grid(axis="y", linestyle="--", alpha=0.6, color='white')
 ax.tick_params(axis='x', colors='white')
 ax.tick_params(axis='y', colors='white')
 
+# Set the axis lines to white
+ax.spines['bottom'].set_color('white')
+ax.spines['left'].set_color('white')
+ax.spines['top'].set_color('white')
+ax.spines['right'].set_color('white')
+
 # Show the chart
 plt.tight_layout()
 plt.show()
